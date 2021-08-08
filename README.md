@@ -1,1 +1,1 @@
-# LGMVIP-Web-Development
+# LGMVIP-WebDevelopment
