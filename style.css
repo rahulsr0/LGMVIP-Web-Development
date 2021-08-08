@@ -1,0 +1,463 @@
+
+/* All section */
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Main Intro */
+
+.main{
+    background-color: black;
+    padding: 50px 80px ;
+}
+.part1{
+    height: 800px;
+    width: 100%;
+    background-image: url("img/cl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.part1 h3{
+    padding-left: 170px;
+    color: rgb(243, 240, 237);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: bold;
+}
+.part1 h3:hover{
+    color: rgba(211, 233, 13, 0.87);
+    transform: scale(1.3);
+}
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/*Navigation Bar: List styling */
+
+#navbar ul{
+    display: flex;
+    margin: 40px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.1rem;
+    padding-left: 40px;
+}
+#navbar ul li a{
+    color: rgb(240, 219, 240);
+    display: block;
+    padding:  3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: larger;
+}
+#navbar ul li a:hover{
+    color: blue;
+    background-color: white;
+    font-weight: bolder;
+    transform: scale(1.2);
+}
+
+/* Part1_content */
+
+.part1_content{
+    padding-left: 170px;
+    padding-top: 40px;
+}
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.part1_content p{
+    color: white;
+    opacity: 2;
+    z-index: -1;
+}
+.part1_content button{
+    border: 3px solid rgb(6, 6, 10);
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    background-color: yellowgreen;
+    color: rgb(5, 0, 1);
+}
+.part1_content button:hover{
+    background-color: white;
+    font-style: italic;
+    color: blue;
+    transform: scale(1.1);
+}
+
+/* Home Section */
+
+.part2{
+    height: 1250px;
+    width: 100%;
+    background-color: black;
+}
+.part2 h1{
+    color: rgb(600,12,263);
+    padding-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+}
+.part2 h1:hover{
+    color: purple;
+    transform: scale(1.5);
+}
+.part2_content p{
+    color: white;
+    padding-top: 100px;
+    padding-left: 50px;
+    float: left;
+    font-family: 'Special Elite', cursive;
+    font-weight: 550;
+    font-size: 20px;
+}
+.part2_content img{
+   height: 100%;
+    width: 34%;
+    float: right;
+    padding-right: 45px;
+    padding-top: 100px;
+}
+
+/* Movies-Grid Section */
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 0px 170px;
+    margin: 0px 65px;
+}
+.grid h2{
+    color: #cdcfd0;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    padding-top: 40px;
+    font-family: 'Kaushan Script', cursive;
+}
+.grid h2:hover{
+    color: rgb(243, 240, 237);
+    transform: scale(1.5);
+}
+.grid_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.grid_card{
+    margin: 20px;
+    height: 550px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    background-image: linear-gradient(-225deg, #c0b7e0 0%, #3c0a72 29%, #093574 67%, #e78a38 100%);
+    transition: 0.3s ease-in;
+}
+.grid_card:hover{
+    transform: scale(1.075);
+    cursor: pointer;
+}
+.grid_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.grid_card button {
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+.grid_card button:hover{
+    cursor: pointer;
+    background-color: rgb(225, 240, 16);
+    color: black;
+    font-weight: bolder;
+}
+
+/* Gallery Section */
+
+img {
+  vertical-align: middle;
+}
+h2{
+  padding-top: 40px;
+  margin-bottom: 100px;
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-size: 3rem;
+}
+h2:hover{
+  transform: scale(1.5);
+}
+.container2 {
+  margin-top: 40px;
+  position: relative;
+}
+.slides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev, .next {
+  cursor: pointer;
+  top: 40%;
+  position: absolute;
+  padding: 16px;
+  width: auto;
+  color: white;
+  margin-top: -50px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(146, 11, 236, 0.8);
+}
+.number {
+  color: #f11616;
+  position: absolute;
+  font-size: 20px;
+  padding: 8px 12px;
+  top: 0;
+}
+.caption-container {
+  background-image: linear-gradient(-225deg, #c0b7e0 0%, #3c0a72 29%, #093574 67%, #e78a38 100%);
+  text-align: center;
+  padding: 5px 5px;
+  color: white;
+  font-size: 1.8rem;
+  font-family: sans-serif;
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column {
+  float: left;
+  width: 14.22%;
+}
+.demo {
+  opacity: 0.7;
+}
+.column img{
+  margin-top: 0px;
+}
+.active, .demo:hover {
+  opacity: 1;
+}
+
+/* NewsLetter Section */
+
+.newsletter{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.news {
+    border: 3px solid;
+    font-family: Arial;
+    background-image: url('img/new1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+    padding-top: 30px;
+}
+.container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+.container img:hover {
+    transform: scale(1.5);
+}
+.container h1{
+    color: rgb(235, 230, 230);
+    font-family: 'Special Elite', cursive;
+    padding-top: 40px;
+}
+.input_container{
+    padding-left: 120px;
+    padding-top: 0px;
+}
+.input_container input[type=text], input[type=submit] {
+  width: 30%;
+  padding: 12px;
+  margin: 12px 12px;
+  display: inline-block;
+  border: 0px solid;
+  box-sizing: border-box;
+  border-radius:20px;
+  padding-left: 38px;
+}
+input[type=submit] {
+  background-color: #150853;
+  color: white;
+  border: none;
+  padding-left: 10px;
+  width: 20%;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+  background-color: rgb(221, 245, 9);
+  color: blue;
+  font-weight: bolder;
+}
+.spam p{
+  text-align: center;
+  font-size: 15px;
+  color: rgb(217, 233, 235);
+}
+
+
+/* Contact Form and Map */
+
+.container_form{
+  background-image: linear-gradient(-270deg, #e78a38 0%, #7a2acf 50%, #093574 50%, #e78a38 100%);
+  width: 100%;
+  height: 800px;
+  margin: 60px auto;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px 20px;
+}
+.container_form h1{
+  padding-left: 140px;
+  padding-top: 20px;
+}
+.submitted{
+  padding-left: 140px;
+  float: left;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+span{
+  color:blue;
+}
+.submitted input[type=text], input[type=tel] {
+  border-radius: 10px;
+  border: 3px solid black;
+  width: 100%;        
+}
+.container_form .submitted button{
+  margin-left: 45px;
+  margin-top: 10px;
+  width: 150px;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+  color: white;
+}
+.container_form .submitted button:hover{
+  background-color: rgb(219, 23, 23);
+  color: black;
+  font-weight: bold;
+}
+
+#map{
+  padding-left: 600px;
+  float: right;
+  height: 750px;
+  width: 45%;
+}
+
+/* Address and Follow Us Section */
+
+.bottom{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+}
+.b1{
+  padding: 4px 155px;
+  text-align: center;
+}
+.fa {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  margin: 4px 4px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 1.5;
+  background-color: black;
+}
+.fa-facebook {
+  background: #4473da;
+  color: white;
+}
+.fa-twitter {
+  background: #3586c4;
+  color: white;
+}
+.fa-google {
+  background: #ce4331;
+  color: white;
+}
+.fa-linkedin {
+  background: #064d6e;
+  color: white;
+}
+.fa-youtube {
+  background: #e70303;
+  color: white;
+}
+.fa-instagram {
+  background: #1672b4;
+  color: white;
+}
+
+/* Copyright Section */
+
+footer{
+  padding: 15px 535px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
