@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGM-Task1</title>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<div>
+
+<!-- Main Page Intro with NavBar  -->
+    <div class="main">
+        <div class="part1">
+            <nav id="navbar">
+                <h3>ZIPPY </h3>
+                <ul class="items">
+                    <li class="item"><a href="#home">Home</a></li>
+                    <li class="item"><a href="#services">Trending</a></li>
+                    <li class="item"><a href="#gallery">Gallery</a></li>
+                    <li class="item"><a href="#newsl">Subscribe</a></li>
+                    <li class="item"><a href="#contform">Contact Us</a></li>
+                    <li class="item"><a href="#last_section">Follow Us</a></li>
+                </ul>
+            </nav>
+            <div class="part1_content">
+                <h1>One page promising to <br>fill all your needs!</h1>
+                <p>Zippy movies brings booking tickets for movies, concerts, <br> live event streaming, and    activitiesnear you to yourfingertips. <br> Buy or rent movies of your choice.</p>
+                <button id="heading-button">Book-Now</button>
+                <button id="heading-button">Learn-more</button>
+            </div>
+        </div>
+
+<!-- Home Section  -->
+        <div class="part2" id="home">
+            <h1>Welcome to Zippy Movies</h1>
+            <div class="part2_content">
+                <p>Now Introducing Zippymovies Stream- handpicked cinema from around the world. <br> Get personalized
+                    recommendations. Discover
+                    different movies on Premieres, <br> Exclusives, and more. You can buy/rent movies in the resolution
+                    of your choice, <br> pay per
+                    view and watch them on any platform, your phone, TV, or on the website.<br> Chromecast is available
+                    for android and Airplay
+                    for iOS. <br>You can also download a movie and view it later without the internet.<br> Collect the
+                    movies you've bought/rented
+                    in your Stream library.<br> Login to your Stream account with Zippymovies app. <br>Express checkout
+                    for faster transactions.</p>
+                <img src="img/image_main.png" alt="img">
+            </div>
+
+<!-- Movies-Grid Section -->
+            <div class="grid" id="services">
+                <h2>Movies on Trend!</h2>
+                <div class="grid_wrapper">
+                    <div class="grid_card">
+                        <img src="img/comed.png" alt="noimg" width="100%" height="83%">
+                          <div class="grid_btn">
+                            <button>Fun-Comedy</button>
+                        </div>
+                    </div>
+                    <div class="grid_card">
+                        <img src="img/f99.png" alt="noimg" width="100%" height="83%">
+                          <div class="grid_btn">
+                            <button>Action-Thriller</button>
+                        </div>
+                    </div>
+                    <div class="grid_card">
+                        <img src="img/allu.png" alt="noimg" width="100%" height="83%">
+                          <div class="grid_btn">
+                            <button>Comic-Fantasy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Gallery Section -->
+        <h2>Movies Gallery Around you!</h2>
+        <div class="container2" id="gallery">
+            <div class="slides">
+                <div class="number">1 / 7</div>
+                <img src="img/kgf_wide.jpg" width="100%" height="500px">
+            </div>
+            <div class="slides">
+                <div class="number">2 / 7</div>
+                <img src="img/mortal_wide.jpg" width="100%" height="500px">
+            </div>
+            <div class="slides">
+                <div class="number">3 / 7</div>
+                <img src="img/blackwidow_wide.jpg" width="100%" height="500px">
+            </div>
+            <div class="slides">
+                <div class="number">4 / 7</div>
+                <img src="img/fastfurious.jpg" width="100%" height="500px">
+            </div>
+            <div class="slides">
+                <div class="number">5 / 7</div>
+                <img src="img/bhuj_wide.webp" width="100%" height="500px">
+            </div>
+            <div class="slides">
+                <div class="number">6 / 7</div>
+                <img src="img/bell_wide.jpg" width="100%" height="500px">
+            </div>
+            <div class="slides">
+                <div class="number">7 / 7</div>
+                <img src="img/notime_wide.jpg" width="100%" height="500px">
+            </div>
+
+            <a class="prev" onclick="plus(-1)">❮</a>
+            <a class="next" onclick="plus(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="img/kgf.jpg" style="width:100%" height="250px" onclick="current(1)"
+                        alt="KGF Chapter2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/mortal.jpg" style="width:100%" height="250px"
+                        onclick="current(2)" alt="Mortal Kombat">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/blackwidow.jpg" style="width:100%" height="250px"
+                        onclick="current(3)" alt="Black Widow">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/f9.jpg" style="width:100%" height="250px" onclick="current(4)"
+                        alt="Fast and Furious 9">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/bhuj.jpg" style="width:100%" height="250px" onclick="current(5)"
+                        alt="Bhuj The Pride of India">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/bell.jpg" style="width:100%" height="250px" onclick="current(6)"
+                        alt="Bell Bottom">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/notime.jpg" style="width:100%" height="250px"
+                        onclick="current(7)" alt="No Time to Die">
+                </div>
+            </div>
+        </div>
+
+<!-- Newsletter section -->
+        <div class="newsletter" id="newsl">
+            <form class="news" action="/action_page.php">
+                <div class="container">
+                    <img src="img/imgs.jpg" height="80px" width="80px">
+                    <h1 style=" text-align:center">Sign Up for our Newsletter</h1>
+                </div>
+                <div class="input_container">
+                    <input type="text" placeholder="First Name" name="name" required>
+                    <input type="text" placeholder="Email address" name="mail" required>
+                    <input type="submit" value="Subscribe">
+                </div>
+                <div class="spam">
+                    <p>Unsubscribe anytime.</p>
+                </div>
+            </form>
+        </div>
+
+<!-- Contact_Form and Map -->
+        <div class="container_form" id="contform">
+            <div id="map"></div>
+            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" ;>Contact Form
+            </h1>
+            <div class="submitted">
+                <form action="formsubmitted.html" onsubmit="return fun()">
+                    <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Name :</label>
+                    <input type="text" name="user" id="user"><br>
+                    <span id="userError"></span>
+                    <br>
+                    <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Email :</label>
+                    <input type="text" name="Email" id="Email"> <br>
+                    <span id="emailError"></span>
+                    <br>
+                    <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Mobile :</label>
+                    <input type="tel" name="Mobile" id="mobile"> <br>
+                    <span id="mobileError"></span>
+                    <br>
+                    <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Gender:</label>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other
+                    <br> <span id="genderError"></span>
+                    <br>
+                    <label style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Comment for our Service:</label>
+                    <br>
+                    <textarea name="myText" cols="40" rows="10"></textarea>
+                    <br>
+                    <button style="text-align: center;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+      
+<!-- Address and Follow-Us Section -->
+    <div id="last_section">
+        <div class="bottom">
+            <div class="b1">
+                <h5>Office Address</h5>
+                <p>2-block ABC, <br> West-Side, near <br> Devashish Mall,Gurgaon </p>
+            </div>
+            <div class="b1">
+                <h5>Follow Us</h5>
+                <p>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a> <br>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </p>
+            </div>
+            <div class="b1">
+                <h5>Contact us</h5>
+                <p>+123 456 789 <br> zippymovies@skype <br> <a href="/">enquiry@zippymovies.com</a> </p>
+            </div>
+        </div>
+    </div>
+
+<!-- Copyright -->
+    <footer>&copy;Copyright@www.zippymovies.com.All rights reserved!</footer>
+</div>
+
+
+</body>
+
+
+        <script src="index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzHv01RtxyuC15Nt8rmqq4yI1h6zS4JuQ&callback=initMap&libraries=&v=weekly&channel=2"
+        async></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</html>
